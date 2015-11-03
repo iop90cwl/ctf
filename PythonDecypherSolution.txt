@@ -1,0 +1,34 @@
+The following block of code was given:
+
+x = raw_input("enter the password: ");
+y = "";
+for c in x:
+	y += chr(ord(c) ^ 14);
+	if y == "ko}wmzhugQocQoQhbois":
+		print "congratz the flag is " + y;
+	else:
+		print "nope";
+We are given the challenge to reverse the code.
+I looked at the “y” string:
+if y == "ko}wmzhugQocQoQhbois":
+I then looked at the following code:
+	y += chr(ord(c) ^ 14);
+The first thing that c (which is each character from the y string) does is get run through an “ord” function. So, I took each character from the y string and ran it through in the Python console (enter it by typing python into the terminal). I got the following numbers:
+
+Example: ord(“k”)
+
+107, 111, 125, 119, 109, 122, 104, 117, 103, 80, 111, 99, 81, 104, 98, 111, 105, 115
+
+The “^” in python is an XOR gate. This runs the “y” value through an XOR gate and outputs a number. I took the numbers I got for each character in the original string, ran them through an XOR gate (^) against 14 in a python console, and got the following numbers.
+
+Example: 107 ^ 14
+
+101, 97, 115, 121, 99, 116, 102, 123, 105, 95, 97, 109, 95, 102, 108, 97, 103, 125
+
+I then looked at the chr( ) function. This outputs the ascii character of a number value. I entered each number through the chr( ) in a python console, and got these characters:
+
+Example: chr(101)
+
+This is the final answer. I checked by submitting it on the EasyCTF website: https://www.easyctf.com/about
+
+easyctf{i_am_a_flag}

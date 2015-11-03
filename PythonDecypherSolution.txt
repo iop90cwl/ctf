@@ -29,6 +29,6 @@ I then looked at the chr( ) function. This outputs the ascii character of a numb
 
 Example: chr(101)
 
-This is the final answer. I checked by submitting it on the EasyCTF website: https://www.easyctf.com/about
-
 easyctf{i_am_a_flag}
+
+This is the final answer. I checked by submitting it on the EasyCTF website: https://www.easyctf.com/about

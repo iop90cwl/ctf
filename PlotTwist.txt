@@ -1,0 +1,3 @@
+This was solved by going into the source and opening up script.js in a text editor.
+
+easyctf{remember_to_check_everywhere}

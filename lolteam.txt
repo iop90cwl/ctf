@@ -1,0 +1,1 @@
+For lolteam, I opened the file in WireShark and then looked for the password in the TCP stream. I then converted the hex symols into ascii and found the password.

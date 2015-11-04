@@ -1,0 +1,1 @@
+I looked at the SSL Certificate and found that it was issued with the flag.
